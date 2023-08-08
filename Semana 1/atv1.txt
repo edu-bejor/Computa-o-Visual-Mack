@@ -1,1 +1,5 @@
+Qual é a sua ideia de Computação Visual?
 
+Para mim, acredito que iremos mexer com representações de objetos 2D / 3D, basicamente manipulação de imagens tanto estáticas quanto um conjunto de imagens(vídeo).
+
+Feito por: José Eduardo Bernardino Jorge | 42019877
