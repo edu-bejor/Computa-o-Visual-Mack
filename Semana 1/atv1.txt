@@ -3,3 +3,9 @@ Qual é a sua ideia de Computação Visual?
 Para mim, acredito que iremos mexer com representações de objetos 2D / 3D, basicamente manipulação de imagens tanto estáticas quanto um conjunto de imagens(vídeo).
 
 Feito por: José Eduardo Bernardino Jorge | 42019877
+
+--------------------------------
+
+Computação Visual é para mim a área que estuda os algoritmos usados na representação de imagens do mundo real digitalmente. Esses algoritmos acredito que possam ser de padronizações (a representação da imagem em si do real para o virtual), compressão das informações, filtros e transformações (brilho / saturação, etc).
+
+Feito por: Elieder Damasceno Sousa | 32093659
