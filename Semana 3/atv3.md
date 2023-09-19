@@ -1,8 +1,9 @@
-## Uso do filtro 'blur' para esconder o rosto de pessoas no Google Street View.
+## Uso do filtro 'blur' para esconder o rosto de pessoas no Google Street View
 
 O Google Street View é um serviço distribuído pela Google que permite que o usuário visualize ruas de vários locais do mundo através do escaneamento do ambiente através de fotos. Um carro da empresa com câmeras modificadas ao trafegar por um local, tira diversas fotos (8 para cada 'pedaço' da rua, além de uma com uma câmera do tipo fish-eye) que são combinadas de forma a representarem uma foto panorâmica.
 
-Um dos problemas principais da tecnologia é a garantia da privacidade dos transeuntes, bem como informações confidenciais tais como as placas dos carros nas fotos. 
+Um dos problemas principais da tecnologia é a garantia da privacidade dos transeuntes, bem como informações confidenciais tais como as placas dos carros nas fotos.  
+
 ![image](https://github.com/edu-bejor/Computacao-Visual-Mack/assets/16262291/a6b58a6a-5af8-4754-a760-566858a76ad7)
 
 Por isso, pesquisadores da empresa criaram um sistema que permite identificar e aplicar um filtro de blur nas faces das pessoas em cada foto. O paper "Large-scale Privacy Protection in Google Street View" mostra como o sistema de detecção de faces do Google Street View funciona. 
