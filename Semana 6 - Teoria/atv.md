@@ -5,32 +5,32 @@ Faça uma pesquisa sobre como é possível:
    Limiarização é o método mais simples de segmentação de imagens e pode ser usado no processo de binarização. Consiste na escolha de um ponto T, que é usado como limiar de modo que para dada imagem I >= T, a nova imagem recebe valores branco, caso contrário recebe valores preto, ou vice e versa. Quando a constante T é aplicável a uma imagem inteira, o processo dado nesta equação é conhecido como limiarização global. Quando o valor de T muda ao longo da imagem, usamos o termo limiarização variável, ou adaptativa.
    
    Exemplo de como realizar a limiarização de uma imagem:
-  ```
-import matplotlib.pyplot as plt
-from skimage import io, color, filters
-
-img = io.imread('img.png') 
-
-gray_image = color.rgb2gray(img)
-
-threshold_value = 0.5 
-
-binary_image = gray_image > threshold_value
-
-fig, axes = plt.subplots(1, 2, figsize=(10, 5))
-ax = axes.ravel()
-
-ax[0].imshow(gray_image, cmap=plt.cm.gray)
-ax[0].set_title('Imagem Original')
-
-ax[1].imshow(binary_image, cmap=plt.cm.gray)
-ax[1].set_title('Imagem Binarizada')
-
-for a in ax:
-    a.axis('off')
-
-plt.show()
-```
+     ```
+   import matplotlib.pyplot as plt
+   from skimage import io, color, filters
+   
+   img = io.imread('img.png') 
+   
+   gray_image = color.rgb2gray(img)
+   
+   threshold_value = 0.5 
+   
+   binary_image = gray_image > threshold_value
+   
+   fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+   ax = axes.ravel()
+   
+   ax[0].imshow(gray_image, cmap=plt.cm.gray)
+   ax[0].set_title('Imagem Original')
+   
+   ax[1].imshow(binary_image, cmap=plt.cm.gray)
+   ax[1].set_title('Imagem Binarizada')
+   
+   for a in ax:
+       a.axis('off')
+   
+   plt.show()
+   ```
 
 2. Plotar o histograma de uma imagem tons de cinza usando Python, scikit-image e matplotlib.
 
@@ -102,8 +102,7 @@ plt.show()
 
    ```
 
-
-5. Equalizar o histograma de uma imagem usando Python e scikit-image.
+4. Equalizar o histograma de uma imagem usando Python e scikit-image.
    
    A equalização de histograma é muito utilizada em processamento digital de imagens (PDI), onde é possível ajustar os níveis de cinza de uma imagem automaticamente, garantindo um brilho e contraste balanceados de forma rápida e fácil. A equalização de histograma é uma técnica de transformação de intensidade que tem por objetivo balancear os níveis de cinza em uma imagem de forma automática, sem precisar de parâmetros e configurações adicionais. Dessa forma, imagens com um nível de brilho desbalanceados, ou seja, claras ou escuras demais atingem uma distribuição normalizada, o que garante um melhor contraste e visualização dos detalhes presentes na cena.
    
@@ -163,12 +162,35 @@ plt.show()
            plt.grid(True)
            plt.show()
    ```
-      
-  Com isso já é possível gerar e visualizar o histograma da imagem.
+
+5. Detectar (concluir) que uma foto está subexposta ou que está superexposta, analisando o histograma.
+   
+   Uma imagem subexposta é o tipo de fotografia que pode ser considerada muito escura, já a superexposição é exatamente o oposto do termo definido anteriormente. Uma imagem que é mais brilhante do que deveria ser pode ser considerada com excesso de exposição. Quando muita luz é permitida durante a exposição, o resultado é uma fotografia muito clara. Levando isso em consideração,
+   
+   Subexposição:
+   
+- Histograma Deslocado para a Esquerda: Se o histograma da imagem estiver deslocado para a esquerda, isso pode indicar subexposição.
+  ![image](https://github.com/edu-bejor/Computacao-Visual-Mack/assets/74507357/99467eb6-7418-422f-a2f5-c5e4867ae69e)
 
 
+   Superexposição:
 
+- Histograma Deslocado para a Direita: Se o histograma da imagem estiver deslocado para a direita, isso pode indicar superexposição. 
+   ![image](https://github.com/edu-bejor/Computacao-Visual-Mack/assets/74507357/2f942848-1a8c-43bb-832e-70d959b85957)
 
+6. Detectar (concluir) se uma imagem está com baixo contraste ou alto contraste, analisando o histograma.
+
+   Uma imagem de baixo contraste retém os detalhes, embora tenda a não ter dimensão e parecer suave, ja uma imagem de alto contraste perde detalhes, especialmente em áreas com tons graduados, e pode parecer um rascunho ou estar posterizada. 
+
+   Alto Contraste:
+   
+   Histograma: Em uma imagem de alto contraste, o histograma tende a ser mais concentrado em um ou mais picos.
+   ![image](https://github.com/edu-bejor/Computacao-Visual-Mack/assets/74507357/ed55f8ef-b9f3-4296-9254-18d9a3118f5d)
+
+   Baixo Contraste:
+   
+   Histograma: Em uma imagem de baixo contraste, o histograma tende a ser espalhado pelo intervalo de valores de intensidade.
+   ![image](https://github.com/edu-bejor/Computacao-Visual-Mack/assets/74507357/eeb57fa2-3d55-4f48-b3b7-37f3078d35ae)
 
 
 Referências:
@@ -180,4 +202,10 @@ Referências:
 
 3. ChatGpt: Agora me dê um exemplo de como plotar o histograma de uma imagem colorida (um histograma por canal de cor) usando Python, scikit-image e matplotlib.
    
-4. https://medium.com/data-hackers/equalização-de-histograma-em-python-378830368d60   
+4. https://medium.com/data-hackers/equalização-de-histograma-em-python-378830368d60
+
+5. https://fotodicasbrasil.com.br/subexposicao-e-superexposicao-um-guia-para-iniciantes/;
+   PDF do professor: https://graduacao.mackenzie.br/mod/resource/view.php?id=875301
+
+6. https://helpx.adobe.com/br/lightroom-classic/lightroom-key-concepts/contrast.html#:~:text=Uma%20imagem%20de%20baixo%20contraste,dimensões%2C%20e%20tem%20aspecto%20nítido;
+   PDF do professor: https://graduacao.mackenzie.br/mod/resource/view.php?id=875301
