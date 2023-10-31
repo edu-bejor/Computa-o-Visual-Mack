@@ -91,6 +91,9 @@ As etapas do pipeline do OpenGL são as seguintes:
 - Etapa de exibição: Nesta etapa, a imagem é exibida na tela.  
 O pipeline do OpenGL é um processo complexo que pode ser personalizado para atender às necessidades específicas de uma aplicação.
 
+![image](https://github.com/edu-bejor/Computacao-Visual-Mack/assets/16262291/e64d8f1d-1cea-4135-b0da-017232640550)
+
+
 ### Código OpenGL
 ```
 #include <GL/glut.h> 
