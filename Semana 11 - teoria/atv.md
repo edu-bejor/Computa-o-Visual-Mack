@@ -15,4 +15,6 @@ O pipeline da Vulkan é composto pelos seguintes estágios:
 - Depth testing: Este estágio é responsável por testar se um pixel está na frente ou atrás de outro pixel. O teste de profundidade é usado para criar a ilusão de profundidade na imagem.
 - Stencil testing: Este estágio é opcional e pode ser usado para aplicar efeitos visuais, como máscaras ou efeitos de iluminação.
 - Output merger: Este estágio é responsável por combinar os resultados dos estágios anteriores e renderizar a imagem na tela.
-  
+
+![image](https://github.com/edu-bejor/Computacao-Visual-Mack/assets/16262291/dab44c75-4f2f-4ff5-8497-b59df3f022c0)
+
